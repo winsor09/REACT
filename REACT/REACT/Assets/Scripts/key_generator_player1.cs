@@ -20,6 +20,8 @@ public class key_generator_player1 : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+        GameManager.Instance.p1 = this;
+        GameManager.Instance.p2 = this;
         rand = Random.Range(1, 12);
         currentval = Key[rand];
     }

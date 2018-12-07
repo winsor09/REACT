@@ -13,7 +13,12 @@ public class GameManager : MonoBehaviour
         get { return instance ?? ((instance = new GameManager())); }
     }
 
-    public Character MyCharacter
+    public key_generator_player1 p1
+    {
+        get; set;
+    }
+
+    public key_generator_player1 p2
     {
         get; set;
     }
