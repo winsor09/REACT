@@ -49,65 +49,142 @@ public class key_generator_player2 : MonoBehaviour {
             ResetCharacters();
             u.SetActive(true);
         }
+
+        if (currentval == "u" && Input.GetKeyDown("u"))
+        {
+            u.SetActive(false);
+            //GameManager.Instance.
+        }
+
         if (currentval == "i")
         {
             ResetCharacters();
             i.SetActive(true);
 
         }
+
+        if (currentval == "i" && Input.GetKeyDown("i"))
+        {
+            i.SetActive(false);
+            //GameManager.Instance.
+        }
+
         if (currentval == "o")
         {
             ResetCharacters();
             o.SetActive(true);
         }
+
+        if (currentval == "o" && Input.GetKeyDown("o"))
+        {
+            o.SetActive(false);
+            //GameManager.Instance.
+        }
+
         if (currentval == "p")
         {
             ResetCharacters();
             p.SetActive(true);
 
         }
+
+        if (currentval == "p" && Input.GetKeyDown("p"))
+        {
+            p.SetActive(false);
+            //GameManager.Instance.
+        }
+
         if (currentval == "h")
         {
             ResetCharacters();
             h.SetActive(true);
 
         }
+
+        if (currentval == "h" && Input.GetKeyDown("h"))
+        {
+            h.SetActive(false);
+            //GameManager.Instance.
+        }
+
         if (currentval == "j")
         {
             ResetCharacters();
             j.SetActive(true);
 
         }
+
+        if (currentval == "u" && Input.GetKeyDown("u"))
+        {
+            u.SetActive(false);
+            //GameManager.Instance.
+        }
+
         if (currentval == "k")
         {
             ResetCharacters();
             k.SetActive(true);
 
         }
+
+        if (currentval == "u" && Input.GetKeyDown("u"))
+        {
+            u.SetActive(false);
+            //GameManager.Instance.
+        }
+
         if (currentval == "l")
         {
             ResetCharacters();
             l.SetActive(true);
 
         }
+
+        if (currentval == "u" && Input.GetKeyDown("u"))
+        {
+            u.SetActive(false);
+            //GameManager.Instance.
+        }
+
         if (currentval == "b")
         {
             ResetCharacters();
             b.SetActive(true);
 
         }
+
+        if (currentval == "u" && Input.GetKeyDown("u"))
+        {
+            u.SetActive(false);
+            //GameManager.Instance.
+        }
+
         if (currentval == "n")
         {
             ResetCharacters();
             n.SetActive(true);
 
         }
+
+        if (currentval == "u" && Input.GetKeyDown("u"))
+        {
+            u.SetActive(false);
+            //GameManager.Instance.
+        }
+
         if (currentval == "m")
         {
             ResetCharacters();
             m.SetActive(true);
 
         }
+
+        if (currentval == "u" && Input.GetKeyDown("u"))
+        {
+            u.SetActive(false);
+            //GameManager.Instance.
+        }
+
     }
 
     void ResetCharacters()
@@ -123,7 +200,7 @@ public class key_generator_player2 : MonoBehaviour {
         b.SetActive(false);
         n.SetActive(false);
         m.SetActive(false);
-        m.SetActive(true);
+        
 
     }
 }

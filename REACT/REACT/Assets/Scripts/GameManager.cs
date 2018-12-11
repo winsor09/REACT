@@ -7,7 +7,7 @@ public class GameManager
     float timer = 0f;
     float time2goal = 10f;
     static GameManager instance;
-
+    
     public static GameManager Instance
     {
         get { return instance ?? ((instance = new GameManager())); }
@@ -32,6 +32,11 @@ public class GameManager
     {
     }
 
+    public void player2wins()
+    {
+       
+    }
+
 
     public void Timer()
     {
@@ -41,6 +46,8 @@ public class GameManager
 
 
     }
+
+
 
 
 
