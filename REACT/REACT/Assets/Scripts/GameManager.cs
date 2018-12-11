@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     float timer = 0f;
-    float time2goal = 6000f;
+    float time2goal = 10f;
     static GameManager instance;
 
     public static GameManager Instance
@@ -30,9 +30,22 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        timer += Time.deltaTime;
-
     }
+
+
+        public void Timer()
+        {
+            float timer = 0;
+        
+         timer=Time.deltaTime;
+       
+        
+
+
+        }
+
+
+
 
     class Updater : MonoBehaviour
     {
@@ -42,3 +55,4 @@ public class GameManager : MonoBehaviour
         }
     }
 }
+

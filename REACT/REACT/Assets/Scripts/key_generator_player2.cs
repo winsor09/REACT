@@ -111,6 +111,7 @@ public class key_generator_player2 : MonoBehaviour {
         b.SetActive(false);
         n.SetActive(false);
         m.SetActive(false);
+        m.SetActive(true);
 
     }
 }
