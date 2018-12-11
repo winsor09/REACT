@@ -11,19 +11,31 @@ public class key_generator_player2 : MonoBehaviour {
 
     [SerializeField]
     GameObject u;
+    [SerializeField]
     GameObject i;
+    [SerializeField]
     GameObject o;
+    [SerializeField]
     GameObject p;
+    [SerializeField]
     GameObject h;
+    [SerializeField]
     GameObject j;
+    [SerializeField]
     GameObject k;
+    [SerializeField]
     GameObject l;
+    [SerializeField]
     GameObject b;
+    [SerializeField]
     GameObject n;
+    [SerializeField]
     GameObject m;
+    [SerializeField]
 
     // Use this for initialization
     void Start () {
+        GameManager.Instance.p2 = this;
         rand = Random.Range(1, 12);
         currentval = Key[rand];
 

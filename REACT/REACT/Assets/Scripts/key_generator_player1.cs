@@ -7,21 +7,31 @@ public class key_generator_player1 : MonoBehaviour {
     List<string> Key = new List<string> { "q", "w", "e", "r", "a", "s", "d", "f", "z", "x", "c" };
     [SerializeField]
     GameObject q;
+    [SerializeField]
     GameObject w;
+    [SerializeField]
     GameObject e;
+    [SerializeField]
     GameObject r;
+    [SerializeField]
     GameObject a;
+    [SerializeField]
     GameObject s;
+    [SerializeField]
     GameObject d;
+    [SerializeField]
     GameObject f;
+    [SerializeField]
     GameObject z;
+    [SerializeField]
     GameObject x;
+    [SerializeField]
     GameObject c;
+    [SerializeField]
     // Use this for initialization
     void Start ()
     {
         GameManager.Instance.p1 = this;
-        GameManager.Instance.p2 = this;
         rand = Random.Range(1, 12);
         currentval = Key[rand];
     }

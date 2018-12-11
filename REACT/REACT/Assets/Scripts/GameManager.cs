@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager
 {
     float timer = 0f;
     float time2goal = 10f;
@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
         get; set;
     }
 
-    public key_generator_player1 p2
+    public key_generator_player2 p2
     {
         get; set;
     }
@@ -33,16 +33,14 @@ public class GameManager : MonoBehaviour
     }
 
 
-        public void Timer()
-        {
-            float timer = 0;
-        
-         timer=Time.deltaTime;
-       
-        
+    public void Timer()
+    {
+        float timer = 0;
+
+        timer = Time.deltaTime;
 
 
-        }
+    }
 
 
 
