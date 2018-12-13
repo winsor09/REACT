@@ -1,13 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameManager
 {
+
+    bool istimerrunning = true;
     float timer = 0f;
-    float time2goal = 10f;
+    float time2goal = 3f;
     static GameManager instance;
-    
+
     public static GameManager Instance
     {
         get { return instance ?? ((instance = new GameManager())); }
@@ -31,6 +31,7 @@ public class GameManager
     private void Update()
     {
         Timer();
+
     }
 
     public void player2wins()
@@ -49,15 +50,23 @@ public class GameManager
 
     public void Timer()
     {
-        float timer = 0;
 
-        timer += Time.deltaTime;
-        if(timer >= time2goal)
+        if (istimerrunning == true)
         {
-            p2.setchar();
-            p1.setchar();
+            timer += Time.deltaTime;
+        }
+
+
+
+
+        if (timer >= time2goal)
+        {
+            istimerrunning = false;
+
             timer = 0;
             
+            p2.setchar();
+            p1.setchar();
         }
 
     }

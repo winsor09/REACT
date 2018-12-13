@@ -43,6 +43,8 @@ public class key_generator_player2 : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
+        
+
         if (currentval == "u")
         {
             
