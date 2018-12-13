@@ -30,6 +30,7 @@ public class GameManager
 
     private void Update()
     {
+        Timer();
     }
 
     public void player2wins()
@@ -41,6 +42,7 @@ public class GameManager
     public void player1wins()
     {
         p1.ResetCharacters();
+
         p2.ResetCharacters();
     }
 
