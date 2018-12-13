@@ -43,7 +43,11 @@ public class GameManager
         float timer = 0;
 
         timer = Time.deltaTime;
-
+        if(timer >= time2goal)
+        {
+            timer = 0;
+            
+        }
 
     }
 
