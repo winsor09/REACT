@@ -46,7 +46,7 @@ public class key_generator_player2 : MonoBehaviour {
     {
         if (currentval == "u")
         {
-            ResetCharacters();
+            
             u.SetActive(true);
         }
 
@@ -54,12 +54,13 @@ public class key_generator_player2 : MonoBehaviour {
         {
             u.SetActive(false);
             currentval = "";
-            //GameManager.Instance.
+            ResetCharacters();
+            GameManager.Instance.player2wins();
         }
 
         if (currentval == "i")
         {
-            ResetCharacters();
+            
             i.SetActive(true);
 
         }
@@ -68,12 +69,13 @@ public class key_generator_player2 : MonoBehaviour {
         {
             i.SetActive(false);
             currentval = "";
-            //GameManager.Instance.
+            ResetCharacters();
+            GameManager.Instance.player2wins();
         }
 
         if (currentval == "o")
         {
-            ResetCharacters();
+           
             o.SetActive(true);
         }
 
@@ -81,12 +83,13 @@ public class key_generator_player2 : MonoBehaviour {
         {
             o.SetActive(false);
             currentval = "";
-            //GameManager.Instance.
+            ResetCharacters();
+            GameManager.Instance.player2wins();
         }
 
         if (currentval == "p")
         {
-            ResetCharacters();
+            
             p.SetActive(true);
 
         }
@@ -95,12 +98,13 @@ public class key_generator_player2 : MonoBehaviour {
         {
             p.SetActive(false);
             currentval = "";
-            //GameManager.Instance.
+            ResetCharacters();
+            GameManager.Instance.player2wins();
         }
 
         if (currentval == "h")
         {
-            ResetCharacters();
+            
             h.SetActive(true);
 
         }
@@ -109,12 +113,13 @@ public class key_generator_player2 : MonoBehaviour {
         {
             h.SetActive(false);
             currentval = "";
-            //GameManager.Instance.
+            ResetCharacters();
+            GameManager.Instance.player2wins();
         }
 
         if (currentval == "j")
         {
-            ResetCharacters();
+            
             j.SetActive(true);
 
         }
@@ -123,12 +128,13 @@ public class key_generator_player2 : MonoBehaviour {
         {
             j.SetActive(false);
             currentval = "";
-            //GameManager.Instance.
+            ResetCharacters();
+            GameManager.Instance.player2wins();
         }
 
         if (currentval == "k")
         {
-            ResetCharacters();
+            
             k.SetActive(true);
 
         }
@@ -137,12 +143,13 @@ public class key_generator_player2 : MonoBehaviour {
         {
             k.SetActive(false);
             currentval = "";
-            //GameManager.Instance.
+            ResetCharacters();
+            GameManager.Instance.player2wins();
         }
 
         if (currentval == "l")
         {
-            ResetCharacters();
+            
             l.SetActive(true);
 
         }
@@ -151,12 +158,13 @@ public class key_generator_player2 : MonoBehaviour {
         {
             l.SetActive(false);
             currentval = "";
-            //GameManager.Instance.
+            ResetCharacters();
+            GameManager.Instance.player2wins();
         }
 
         if (currentval == "b")
         {
-            ResetCharacters();
+            
             b.SetActive(true);
 
         }
@@ -165,12 +173,13 @@ public class key_generator_player2 : MonoBehaviour {
         {
             b.SetActive(false);
             currentval = "";
-            //GameManager.Instance.
+            ResetCharacters();
+            GameManager.Instance.player2wins();
         }
 
         if (currentval == "n")
         {
-            ResetCharacters();
+            
             n.SetActive(true);
 
         }
@@ -179,12 +188,13 @@ public class key_generator_player2 : MonoBehaviour {
         {
             n.SetActive(false);
             currentval = "";
-            //GameManager.Instance.
+            ResetCharacters();
+            GameManager.Instance.player2wins();
         }
 
         if (currentval == "m")
         {
-            ResetCharacters();
+           
             m.SetActive(true);
 
         }
@@ -193,7 +203,8 @@ public class key_generator_player2 : MonoBehaviour {
         {
             m.SetActive(false);
             currentval = "";
-            //GameManager.Instance.
+            ResetCharacters();
+            GameManager.Instance.player2wins();
         }
 
     }
