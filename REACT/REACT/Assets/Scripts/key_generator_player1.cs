@@ -185,7 +185,7 @@ public class key_generator_player1 : MonoBehaviour {
 
     }
 
-    void ResetCharacters()
+    public void ResetCharacters()
     {
         q.SetActive(false);
         w.SetActive(false);
@@ -198,6 +198,7 @@ public class key_generator_player1 : MonoBehaviour {
         z.SetActive(false);
         x.SetActive(false);
         c.SetActive(false);
+        currentval = "";
 
     }
 }

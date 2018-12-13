@@ -34,7 +34,14 @@ public class GameManager
 
     public void player2wins()
     {
-       
+        p1.ResetCharacters();
+        p2.ResetCharacters();
+    }
+
+    public void player1wins()
+    {
+        p1.ResetCharacters();
+        p2.ResetCharacters();
     }
 
 
