@@ -31,7 +31,7 @@ public class key_generator_player2 : MonoBehaviour {
     GameObject n;
     [SerializeField]
     GameObject m;
-    [SerializeField]
+   
 
     // Use this for initialization
     void Start () {
