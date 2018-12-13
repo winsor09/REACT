@@ -114,9 +114,9 @@ public class key_generator_player2 : MonoBehaviour {
 
         }
 
-        if (currentval == "u" && Input.GetKeyDown("u"))
+        if (currentval == "j" && Input.GetKeyDown("j"))
         {
-            u.SetActive(false);
+            j.SetActive(false);
             //GameManager.Instance.
         }
 
@@ -127,9 +127,9 @@ public class key_generator_player2 : MonoBehaviour {
 
         }
 
-        if (currentval == "u" && Input.GetKeyDown("u"))
+        if (currentval == "k" && Input.GetKeyDown("k"))
         {
-            u.SetActive(false);
+            k.SetActive(false);
             //GameManager.Instance.
         }
 
@@ -140,9 +140,9 @@ public class key_generator_player2 : MonoBehaviour {
 
         }
 
-        if (currentval == "u" && Input.GetKeyDown("u"))
+        if (currentval == "l" && Input.GetKeyDown("l"))
         {
-            u.SetActive(false);
+            l.SetActive(false);
             //GameManager.Instance.
         }
 
@@ -153,9 +153,9 @@ public class key_generator_player2 : MonoBehaviour {
 
         }
 
-        if (currentval == "u" && Input.GetKeyDown("u"))
+        if (currentval == "b" && Input.GetKeyDown("b"))
         {
-            u.SetActive(false);
+            b.SetActive(false);
             //GameManager.Instance.
         }
 
@@ -166,9 +166,9 @@ public class key_generator_player2 : MonoBehaviour {
 
         }
 
-        if (currentval == "u" && Input.GetKeyDown("u"))
+        if (currentval == "n" && Input.GetKeyDown("n"))
         {
-            u.SetActive(false);
+            n.SetActive(false);
             //GameManager.Instance.
         }
 
@@ -179,9 +179,9 @@ public class key_generator_player2 : MonoBehaviour {
 
         }
 
-        if (currentval == "u" && Input.GetKeyDown("u"))
+        if (currentval == "m" && Input.GetKeyDown("m"))
         {
-            u.SetActive(false);
+            m.SetActive(false);
             //GameManager.Instance.
         }
 
