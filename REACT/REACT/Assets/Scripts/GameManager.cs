@@ -51,9 +51,11 @@ public class GameManager
     {
         float timer = 0;
 
-        timer = Time.deltaTime;
+        timer += Time.deltaTime;
         if(timer >= time2goal)
         {
+            p2.setchar();
+            p1.setchar();
             timer = 0;
             
         }

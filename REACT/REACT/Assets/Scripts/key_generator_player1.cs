@@ -32,8 +32,7 @@ public class key_generator_player1 : MonoBehaviour {
     void Start ()
     {
         GameManager.Instance.p1 = this;
-        rand = Random.Range(1, 12);
-        currentval = Key[rand];
+        
     }
 
     // Update is called once per frame
@@ -211,6 +210,12 @@ public class key_generator_player1 : MonoBehaviour {
         c.SetActive(false);
         currentval = "";
 
+    }
+    public void setchar()
+    {
+
+        rand = Random.Range(1, 12);
+        currentval = Key[rand];
     }
 }
 
