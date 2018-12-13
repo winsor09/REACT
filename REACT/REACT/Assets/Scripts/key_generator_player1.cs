@@ -48,6 +48,7 @@ public class key_generator_player1 : MonoBehaviour {
         if (currentval == "q" && Input.GetKeyDown("q"))
         {
             q.SetActive(false);
+            currentval = "";
             //GameManager.Instance.
         }
 
@@ -60,6 +61,7 @@ public class key_generator_player1 : MonoBehaviour {
         if (currentval == "w" && Input.GetKeyDown("w"))
         {
             w.SetActive(false);
+            currentval = "";
             //GameManager.Instance.
         }
 
@@ -72,6 +74,7 @@ public class key_generator_player1 : MonoBehaviour {
         if (currentval == "e" && Input.GetKeyDown("e"))
         {
             e.SetActive(false);
+            currentval = "";
             //GameManager.Instance.
         }
 
@@ -84,6 +87,7 @@ public class key_generator_player1 : MonoBehaviour {
         if (currentval == "r" && Input.GetKeyDown("r"))
         {
             r.SetActive(false);
+            currentval = "";
             //GameManager.Instance.
         }
 
@@ -96,6 +100,7 @@ public class key_generator_player1 : MonoBehaviour {
         if (currentval == "a" && Input.GetKeyDown("a"))
         {
             a.SetActive(false);
+            currentval = "";
             //GameManager.Instance.
         }
 
@@ -108,6 +113,7 @@ public class key_generator_player1 : MonoBehaviour {
         if (currentval == "s" && Input.GetKeyDown("s"))
         {
             s.SetActive(false);
+            currentval = "";
             //GameManager.Instance.
         }
 
@@ -120,6 +126,7 @@ public class key_generator_player1 : MonoBehaviour {
         if (currentval == "d" && Input.GetKeyDown("d"))
         {
             d.SetActive(false);
+            currentval = "";
             //GameManager.Instance.
         }
 
@@ -132,6 +139,7 @@ public class key_generator_player1 : MonoBehaviour {
         if (currentval == "f" && Input.GetKeyDown("f"))
         {
             f.SetActive(false);
+            currentval = "";
             //GameManager.Instance.
         }
 
@@ -144,6 +152,7 @@ public class key_generator_player1 : MonoBehaviour {
         if (currentval == "z" && Input.GetKeyDown("z"))
         {
             z.SetActive(false);
+            currentval = "";
             //GameManager.Instance.
         }
 
@@ -156,6 +165,7 @@ public class key_generator_player1 : MonoBehaviour {
         if (currentval == "x" && Input.GetKeyDown("x"))
         {
             x.SetActive(false);
+            currentval = "";
             //GameManager.Instance.
         }
 
@@ -168,6 +178,7 @@ public class key_generator_player1 : MonoBehaviour {
         if (currentval == "c" && Input.GetKeyDown("c"))
         {
             c.SetActive(false);
+            currentval = "";
             //GameManager.Instance.
         }
 
