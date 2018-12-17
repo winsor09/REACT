@@ -2,10 +2,10 @@
 
 public class GameManager
 {
-    float timetillp1 = 0f;
-    float tiltillp2 = 0f;
-    bool p1press = false;
-    bool p2press = false;
+    [SerializeField]
+    GameObject p1win;
+    [SerializeField]
+    GameObject p2Win;
     int p2score = 0;
     int p1score = 0;
     bool istimerrunning = true;
@@ -30,31 +30,48 @@ public class GameManager
     private GameManager()
     {
         Object.DontDestroyOnLoad(new GameObject("Updater", typeof(Updater)));
+        p1win = GameObject.Find("P1win");
+        p2Win = GameObject.Find("P2Win");
+        p1win.SetActive(false);
+        p2Win.SetActive(false);
     }
 
     private void Update()
     {
+        
         Timer();
 
     }
+   
 
     public void player2wins()
     {
-        p1.ResetCharacters();
-        p2.ResetCharacters();
-        p2score++;
+        p2Win.SetActive(true);
+        if(!istimerrunning)
+        {
+            timer = 0;
+            p1.ResetCharacters();
+            p2.ResetCharacters();
+            p2score++;
+            istimerrunning = true;
+          
+        }
+
     }
 
     public void player1wins()
     {
-        p1.ResetCharacters();
-        p2.ResetCharacters();
-        p1score++;
+        p1win.SetActive(true);
+
+        if (!istimerrunning)
+        {
+            p1.ResetCharacters();
+            p2.ResetCharacters();
+            p1score++;
+            istimerrunning = true;
+        }
     }
-  public void p1pressed()
-    {
-     
-    }
+  
 
     public void Timer()
     {
@@ -74,7 +91,9 @@ public class GameManager
             timer = 0;
             p2.setchar();
             p1.setchar();
-         
+            p1win.SetActive(false);
+            p2Win.SetActive(false);
+
 
         }
 

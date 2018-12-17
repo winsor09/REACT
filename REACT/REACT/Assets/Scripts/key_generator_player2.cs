@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class key_generator_player2 : MonoBehaviour
 {
-    bool istimerrun = true;
     int rand;
      string currentval;
     List<string> Key = new List<string> { "u", "i", "o", "p", "h", "j", "k", "l", "b", "n", "m" };
@@ -32,7 +31,7 @@ public class key_generator_player2 : MonoBehaviour
     GameObject n;
     [SerializeField]
     GameObject m;
-    float timer = 0f;
+   public float p1timer = 0f;
 
     // Use this for initialization
     void Start()
@@ -45,11 +44,8 @@ public class key_generator_player2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (istimerrun == true)
-        {
+        
 
-            timer += Time.deltaTime;
-        }
 
         if (currentval == "u")
         {
@@ -61,12 +57,8 @@ public class key_generator_player2 : MonoBehaviour
         {
             u.SetActive(false);
             currentval = "";
-            ResetCharacters();
             GameManager.Instance.player2wins();
-            if(Input.GetKeyDown(currentval))
-            {
-                istimerrun = false;
-            }
+          
         }
 
         if (currentval == "i")
@@ -80,8 +72,8 @@ public class key_generator_player2 : MonoBehaviour
         {
             i.SetActive(false);
             currentval = "";
-            ResetCharacters();
             GameManager.Instance.player2wins();
+           
         }
 
         if (currentval == "o")
@@ -94,23 +86,24 @@ public class key_generator_player2 : MonoBehaviour
         {
             o.SetActive(false);
             currentval = "";
-            ResetCharacters();
             GameManager.Instance.player2wins();
+           
         }
 
         if (currentval == "p")
         {
 
             p.SetActive(true);
-
+           
         }
 
         if (currentval == "p" && Input.GetKeyDown("p"))
         {
             p.SetActive(false);
             currentval = "";
-            ResetCharacters();
             GameManager.Instance.player2wins();
+           
+
         }
 
         if (currentval == "h")
@@ -124,8 +117,9 @@ public class key_generator_player2 : MonoBehaviour
         {
             h.SetActive(false);
             currentval = "";
-            ResetCharacters();
             GameManager.Instance.player2wins();
+           
+
         }
 
         if (currentval == "j")
@@ -139,8 +133,9 @@ public class key_generator_player2 : MonoBehaviour
         {
             j.SetActive(false);
             currentval = "";
-            ResetCharacters();
             GameManager.Instance.player2wins();
+            
+
         }
 
         if (currentval == "k")
@@ -154,8 +149,9 @@ public class key_generator_player2 : MonoBehaviour
         {
             k.SetActive(false);
             currentval = "";
-            ResetCharacters();
             GameManager.Instance.player2wins();
+          
+
         }
 
         if (currentval == "l")
@@ -169,8 +165,8 @@ public class key_generator_player2 : MonoBehaviour
         {
             l.SetActive(false);
             currentval = "";
-            ResetCharacters();
             GameManager.Instance.player2wins();
+          
         }
 
         if (currentval == "b")
@@ -184,8 +180,9 @@ public class key_generator_player2 : MonoBehaviour
         {
             b.SetActive(false);
             currentval = "";
-            ResetCharacters();
             GameManager.Instance.player2wins();
+        
+
         }
 
         if (currentval == "n")
@@ -199,8 +196,9 @@ public class key_generator_player2 : MonoBehaviour
         {
             n.SetActive(false);
             currentval = "";
-            ResetCharacters();
             GameManager.Instance.player2wins();
+         
+
         }
 
         if (currentval == "m")
@@ -214,8 +212,9 @@ public class key_generator_player2 : MonoBehaviour
         {
             m.SetActive(false);
             currentval = "";
-            ResetCharacters();
             GameManager.Instance.player2wins();
+          
+
         }
 
     }
@@ -239,9 +238,9 @@ public class key_generator_player2 : MonoBehaviour
     public void setchar()
     {
 
-        rand = Random.Range(1, 12);
+        rand = Random.Range(0, 11);
         currentval = Key[rand];
-       
+     
 
     }
 
