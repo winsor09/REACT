@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class key_generator_player2 : MonoBehaviour
 {
+    bool istimerrun = true;
     int rand;
      string currentval;
     List<string> Key = new List<string> { "u", "i", "o", "p", "h", "j", "k", "l", "b", "n", "m" };
@@ -31,7 +32,7 @@ public class key_generator_player2 : MonoBehaviour
     GameObject n;
     [SerializeField]
     GameObject m;
-
+    float timer = 0f;
 
     // Use this for initialization
     void Start()
@@ -44,7 +45,11 @@ public class key_generator_player2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (istimerrun == true)
+        {
 
+            timer += Time.deltaTime;
+        }
 
         if (currentval == "u")
         {
@@ -58,6 +63,10 @@ public class key_generator_player2 : MonoBehaviour
             currentval = "";
             ResetCharacters();
             GameManager.Instance.player2wins();
+            if(Input.GetKeyDown(currentval))
+            {
+                istimerrun = false;
+            }
         }
 
         if (currentval == "i")
@@ -232,6 +241,7 @@ public class key_generator_player2 : MonoBehaviour
 
         rand = Random.Range(1, 12);
         currentval = Key[rand];
+       
 
     }
 
