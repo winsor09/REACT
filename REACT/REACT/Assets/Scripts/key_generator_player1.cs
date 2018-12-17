@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class key_generator_player1 : MonoBehaviour {
     int rand;
-    string currentval;
+   string currentval;
     List<string> Key = new List<string> { "q", "w", "e", "r", "a", "s", "d", "f", "z", "x", "c" };
     [SerializeField]
     GameObject q;

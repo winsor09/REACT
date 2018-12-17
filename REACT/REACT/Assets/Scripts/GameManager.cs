@@ -2,12 +2,16 @@
 
 public class GameManager
 {
-
+    float timetillp1 = 0f;
+    float tiltillp2 = 0f;
+    bool p1press = false;
+    bool p2press = false;
+    int p2score = 0;
+    int p1score = 0;
     bool istimerrunning = true;
     float timer = 0f;
     float time2goal = 3f;
     static GameManager instance;
-
     public static GameManager Instance
     {
         get { return instance ?? ((instance = new GameManager())); }
@@ -38,15 +42,19 @@ public class GameManager
     {
         p1.ResetCharacters();
         p2.ResetCharacters();
+        p2score++;
     }
 
     public void player1wins()
     {
         p1.ResetCharacters();
-
         p2.ResetCharacters();
+        p1score++;
     }
-
+  public void p1pressed()
+    {
+     
+    }
 
     public void Timer()
     {
@@ -64,15 +72,14 @@ public class GameManager
             istimerrunning = false;
 
             timer = 0;
-            
             p2.setchar();
             p1.setchar();
+         
+
         }
 
     }
-
-
-
+  
 
 
 

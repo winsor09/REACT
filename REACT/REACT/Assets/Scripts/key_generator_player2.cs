@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class key_generator_player2 : MonoBehaviour {
+public class key_generator_player2 : MonoBehaviour
+{
     int rand;
-    string currentval;
+     string currentval;
     List<string> Key = new List<string> { "u", "i", "o", "p", "h", "j", "k", "l", "b", "n", "m" };
-
     [SerializeField]
     GameObject u;
     [SerializeField]
@@ -31,23 +31,24 @@ public class key_generator_player2 : MonoBehaviour {
     GameObject n;
     [SerializeField]
     GameObject m;
-   
+
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         GameManager.Instance.p2 = this;
-        
+
 
     }
 
     // Update is called once per frame
-    void Update ()
+    void Update()
     {
-        
+
 
         if (currentval == "u")
         {
-            
+
             u.SetActive(true);
         }
 
@@ -61,7 +62,7 @@ public class key_generator_player2 : MonoBehaviour {
 
         if (currentval == "i")
         {
-            
+
             i.SetActive(true);
 
         }
@@ -76,7 +77,7 @@ public class key_generator_player2 : MonoBehaviour {
 
         if (currentval == "o")
         {
-           
+
             o.SetActive(true);
         }
 
@@ -90,7 +91,7 @@ public class key_generator_player2 : MonoBehaviour {
 
         if (currentval == "p")
         {
-            
+
             p.SetActive(true);
 
         }
@@ -105,7 +106,7 @@ public class key_generator_player2 : MonoBehaviour {
 
         if (currentval == "h")
         {
-            
+
             h.SetActive(true);
 
         }
@@ -120,7 +121,7 @@ public class key_generator_player2 : MonoBehaviour {
 
         if (currentval == "j")
         {
-            
+
             j.SetActive(true);
 
         }
@@ -135,7 +136,7 @@ public class key_generator_player2 : MonoBehaviour {
 
         if (currentval == "k")
         {
-            
+
             k.SetActive(true);
 
         }
@@ -150,7 +151,7 @@ public class key_generator_player2 : MonoBehaviour {
 
         if (currentval == "l")
         {
-            
+
             l.SetActive(true);
 
         }
@@ -165,7 +166,7 @@ public class key_generator_player2 : MonoBehaviour {
 
         if (currentval == "b")
         {
-            
+
             b.SetActive(true);
 
         }
@@ -180,7 +181,7 @@ public class key_generator_player2 : MonoBehaviour {
 
         if (currentval == "n")
         {
-            
+
             n.SetActive(true);
 
         }
@@ -195,7 +196,7 @@ public class key_generator_player2 : MonoBehaviour {
 
         if (currentval == "m")
         {
-           
+
             m.SetActive(true);
 
         }
@@ -231,5 +232,7 @@ public class key_generator_player2 : MonoBehaviour {
 
         rand = Random.Range(1, 12);
         currentval = Key[rand];
+
     }
+
 }
